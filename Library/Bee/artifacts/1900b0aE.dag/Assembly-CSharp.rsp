@@ -359,6 +359,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/ControlCharacter.cs"
+"Assets/Scripts/gravitasi.cs"
 "Assets/Scripts/PickUp.cs"
 "Assets/Scripts/PlayerPickUpDrop.cs"
 "Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs"
