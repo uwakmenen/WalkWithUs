@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ControlCharacter : MonoBehaviour
 {
+    kjlndsaljas
     [SerializeField] private float moveSpeed;
     [SerializeField] private float walkSpeed;
     [SerializeField] private float runSpeed;
