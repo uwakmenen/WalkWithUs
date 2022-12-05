@@ -8,7 +8,7 @@ public class PickUp : MonoBehaviour
     private GameObject[] kotak;
     private GameObject main;
     float[] jarak;
-    public GameObject[] tongSampah;
+    private GameObject[] tongSampah;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +20,7 @@ public class PickUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //pick up item
         for (int i = 0; i < jarak.Length; i++)
         {
             jarak[i] = Vector3.Distance(transform.position, kotak[i].transform.position);
@@ -37,19 +38,24 @@ public class PickUp : MonoBehaviour
             }
         }
 
+        //melepaskan item yang dipegang
         for (int i = 0; i < tongSampah.Length; i++)
         {
             if (Input.GetKeyDown(KeyCode.G))
             {
+                //jika dekat dengan tong sampah, akan masuk tong sampah
                 if (Vector3.Distance(transform.position, tongSampah[i].transform.position) <= 2)
                 {
                     if (main != null)
                     {
-                        //Destroy(poin.transform.GetChild(0).gameObject);
+                        poin.transform.GetChild(0).gameObject.transform.SetParent(tongSampah[i].transform);
+                        tongSampah[i].transform.GetChild(0).transform.localPosition = new Vector3(0,1,0);
                         main = null;
+
                     }
 
                 }
+                //jika tidak dia akan melepas barang saja
                 else
                 {
                     if (main != null)

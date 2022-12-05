@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 33837854661762396}
   - component: {fileID: 23910408433680958}
   - component: {fileID: 7852669144684731150}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: street
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -7,11 +7,12 @@ TagManager:
   - CinemachineTarget
   - halangan
   - tong sampah
+  - ground
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - grass
   - Water
   - UI
   - Ground
