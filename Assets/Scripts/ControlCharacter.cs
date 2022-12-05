@@ -96,4 +96,5 @@ public class ControlCharacter : MonoBehaviour
     {
         velocity.y = Mathf.Sqrt(jumpHeigt * -2 * gravity);
     }
+
 }

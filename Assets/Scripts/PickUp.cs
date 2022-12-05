@@ -7,58 +7,73 @@ public class PickUp : MonoBehaviour
     public GameObject poin;
     private GameObject[] kotak;
     private GameObject main;
-
+    float[] jarak;
+    private GameObject[] tongSampah;
     // Start is called before the first frame update
     void Start()
     {
         kotak = GameObject.FindGameObjectsWithTag("halangan");
+        tongSampah = GameObject.FindGameObjectsWithTag("tong sampah");
+        jarak = new float[kotak.Length];
     }
 
     // Update is called once per frame
     void Update()
     {
-        for (int i = 0; i < kotak.Length; i++)
+        //pick up item
+        for (int i = 0; i < jarak.Length; i++)
         {
-            if (Vector3.Distance(this.transform.position, kotak[i].transform.position) <= 2f)
+            jarak[i] = Vector3.Distance(transform.position, kotak[i].transform.position);
+            if (main == null)
             {
-                if (Input.GetKeyDown(KeyCode.E))
+                if (jarak[i]>0&&jarak[i]<0.5)
                 {
-                    if (main == null)
+                    if (Input.GetKeyDown(KeyCode.E))
                     {
-                        
-                        kotak[i].transform.SetParent(poin.transform);
                         main = kotak[i];
+                        kotak[i].transform.SetParent(poin.transform);
                         kotak[i].transform.localPosition = Vector3.zero;
                     }
-                    else
-                    {
-                        return;
-                    }
                 }
-                else if (Input.GetKeyDown(KeyCode.G))
+            }
+        }
+
+        //melepaskan item yang dipegang
+        for (int i = 0; i < tongSampah.Length; i++)
+        {
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                //jika dekat dengan tong sampah, akan masuk tong sampah
+                if (Vector3.Distance(transform.position, tongSampah[i].transform.position) <= 2)
+                {
+                    if (main != null)
+                    {
+                        poin.transform.GetChild(0).gameObject.transform.SetParent(tongSampah[i].transform);
+                        tongSampah[i].transform.GetChild(0).transform.localPosition = new Vector3(0,1,0);
+                        main = null;
+
+                    }
+
+                }
+                //jika tidak dia akan melepas barang saja
+                else
                 {
                     if (main != null)
                     {
                         poin.transform.DetachChildren();
                         main = null;
                     }
-                    else
-                    {
-                        return;
-                    }
+
                 }
+
             }
+
+
         }
     }
 
-
-    void pickUp()
+    void checknearest()
     {
         
-    }
-
-    void Drop()
-    {
-       
     }
 }
