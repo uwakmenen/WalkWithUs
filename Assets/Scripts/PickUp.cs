@@ -48,8 +48,8 @@ public class PickUp : MonoBehaviour
                 {
                     if (main != null)
                     {
-                        poin.transform.GetChild(0).gameObject.transform.SetParent(tongSampah[i].transform);
-                        tongSampah[i].transform.GetChild(0).transform.localPosition = new Vector3(0,1,0);
+                        main.transform.SetParent(tongSampah[i].transform);
+                        main.transform.localPosition = new Vector3(0,1,0);
                         main = null;
 
                     }
