@@ -9,7 +9,10 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 { "pid": 0, "tid": 1, "ts": 1671035774777970, "dur": 1842801, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
 { "pid": 0, "tid": 1, "ts": 1671035774779044, "dur": 104747, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
 { "pid": 0, "tid": 1, "ts": 1671035774883905, "dur": 113051, "ph": "X", "name": "Run Backend", "args": {} },
@@ -18,6 +21,7 @@
 { "pid": 0, "tid": 1, "ts": 1671035776520587, "dur": 100182, "ph": "X", "name": "Finish", "args": {} },
 { "pid": 0, "tid": 1, "ts": 1671035776625780, "dur": 1987, "ph": "X", "name": "ChromeTraceHeader", "args": {} },
 { "pid": 0, "tid": 1, "ts": 1671035776631891, "dur": 832, "ph": "X", "name": "", "args": {} },
+<<<<<<< Updated upstream
 =======
 <<<<<<< Updated upstream
 { "pid": 0, "tid": 1, "ts": 1671003743235769, "dur": 15183606, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
@@ -29,6 +33,8 @@
 { "pid": 0, "tid": 1, "ts": 1671003758420691, "dur": 1544, "ph": "X", "name": "ChromeTraceHeader", "args": {} },
 { "pid": 0, "tid": 1, "ts": 1671003758426173, "dur": 1137, "ph": "X", "name": "", "args": {} },
 >>>>>>> 6dd951027d11d670b68d232b1b1381d70d6d54a7
+=======
+>>>>>>> Stashed changes
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
 ,{ "pid":12345, "tid":0, "ts":1671035774906960, "dur":656, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1671035774907623, "dur":494, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
@@ -119,7 +125,10 @@
 { "pid": 35942, "tid": 1, "ts": 1671035775322070, "dur": 1708, "ph": "X", "name": "Write chrome-trace events", "args": {} },
 { "pid": 0, "tid": 1, "ts": 1671035776637512, "dur": 163, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 ,{ "pid":12345, "tid":0, "ts":1671035775478250, "dur":805, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1671035775479063, "dur":140, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
 ,{ "pid":12345, "tid":0, "ts":1671035775479235, "dur":33, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
@@ -1350,6 +1359,7 @@
 ,{ "pid":12345, "tid":0, "ts":1671035776481453, "dur":2659, "ph":"X", "name": "ProfilerWriteOutput" }
 ,{ "pid": 0, "tid": 1, "ts": 1671035776637732, "dur": 1100, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
 { "pid": 0, "tid": 1, "ts": 1671035776630339, "dur": 8518, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+<<<<<<< Updated upstream
 =======
 ,{ "pid":12345, "tid":0, "ts":1671003743932348, "dur":2976, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1671003743935331, "dur":624, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
@@ -4240,6 +4250,8 @@
 { "pid": 0, "tid": 1, "ts": 1671036205627573, "dur": 19646, "ph": "X", "name": "Write chrome-trace events", "args": {} },
 >>>>>>> Stashed changes
 >>>>>>> 6dd951027d11d670b68d232b1b1381d70d6d54a7
+=======
+>>>>>>> Stashed changes
 {}
 
 ]
