@@ -362,6 +362,7 @@
 "Assets/Scripts/gravitasi.cs"
 "Assets/Scripts/PickUp.cs"
 "Assets/Scripts/PlayerPickUpDrop.cs"
+"Assets/Scripts/SceneManager.cs"
 "Assets/Scripts/Timer.cs"
 "Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs"
 "Assets/StarterAssets/Mobile/Scripts/CanvasInputs/UICanvasControllerInput.cs"
