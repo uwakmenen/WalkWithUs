@@ -72,8 +72,4 @@ public class PickUp : MonoBehaviour
         }
     }
 
-    void checknearest()
-    {
-        
-    }
 }
