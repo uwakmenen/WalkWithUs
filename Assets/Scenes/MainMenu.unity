@@ -781,7 +781,7 @@ GameObject:
   - component: {fileID: 1303475451}
   - component: {fileID: 1303475450}
   m_Layer: 5
-  m_Name: MainMenu
+  m_Name: Judul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -804,8 +804,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 317.75305}
-  m_SizeDelta: {x: 418.6344, y: 78.494}
+  m_AnchoredPosition: {x: 0, y: 294}
+  m_SizeDelta: {x: 606.9902, y: 113.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1303475450
 MonoBehaviour:
@@ -829,18 +829,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
+    m_FontSize: 100
     m_FontStyle: 1
     m_BestFit: 1
-    m_MinSize: 8
-    m_MaxSize: 80
+    m_MinSize: 1
+    m_MaxSize: 101
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Main Menu
+  m_Text: Walk With Us
 --- !u!222 &1303475451
 CanvasRenderer:
   m_ObjectHideFlags: 0

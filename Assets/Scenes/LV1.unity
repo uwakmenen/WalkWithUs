@@ -2358,10 +2358,10 @@ GameObject:
   - component: {fileID: 352440073}
   - component: {fileID: 352440072}
   - component: {fileID: 352440071}
+  - component: {fileID: 352440076}
   - component: {fileID: 352440070}
   - component: {fileID: 352440069}
   - component: {fileID: 352440068}
-  - component: {fileID: 352440067}
   - component: {fileID: 352440066}
   - component: {fileID: 352440074}
   - component: {fileID: 352440075}
@@ -2470,19 +2470,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &352440067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 352440065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22db1c929baae144393a1a992ac476a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  poin: {fileID: 439646482}
 --- !u!114 &352440068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2650,6 +2637,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &352440076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352440065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22db1c929baae144393a1a992ac476a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poin: {fileID: 439646482}
 --- !u!4 &354355445 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4330603509456850, guid: 2bf7da734f1a8224fb14055902b5b343, type: 3}
@@ -6137,7 +6137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextWaktu: {fileID: 2018514698}
   Waktu: 20
-  GameAktif: 0
+  GameAktif: 1
 --- !u!4 &798842418
 Transform:
   m_ObjectHideFlags: 0
@@ -18990,7 +18990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 345}
+  m_AnchoredPosition: {x: 0, y: 459}
   m_SizeDelta: {x: 294.4385, y: 112.5599}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &2040110693 stripped
