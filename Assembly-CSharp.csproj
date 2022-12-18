@@ -70,7 +70,6 @@
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\PickUp.cs" />
     <Compile Include="Assets\Scripts\PlayerPickUpDrop.cs" />
-    <Compile Include="Assets\Scripts\SceneManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Puppet Kid\Environment\Shaders\Built-in_RP\Triplanar.shader" />
