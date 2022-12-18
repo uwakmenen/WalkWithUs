@@ -2544,8 +2544,9 @@ MonoBehaviour:
   GroundedRadius: 0.1
   GroundLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 576
   CinemachineCameraTarget: {fileID: 1781096545}
+  WinUI: {fileID: 0}
   TopClamp: 70
   BottomClamp: -30
   CameraAngleOverride: 0
