@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class PindahScene : MonoBehaviour
 {
-   public void MulaiGame()
+    public void MulaiGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-   public void KeluarGame()
+    public void KeluarGame()
     {
         Application.Quit();
         Debug.Log("Keluar");

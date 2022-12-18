@@ -2774,9 +2774,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parking_barrier prefab
       objectReference: {fileID: 0}
-    - target: {fileID: 1984630016570690, guid: a560b249e984af144b222ea1d93fe697, type: 3}
+    - target: {fileID: 1681190165559068, guid: a560b249e984af144b222ea1d93fe697, type: 3}
       propertyPath: m_TagString
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984630016570690, guid: a560b249e984af144b222ea1d93fe697, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4061960552898642, guid: a560b249e984af144b222ea1d93fe697, type: 3}
       propertyPath: m_RootOrder
@@ -6676,7 +6680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerCamera: {fileID: 399257772}
-  MaxDistance: 5
+  MaxDistance: 8
 --- !u!54 &1734295959
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6897,7 +6901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22db1c929baae144393a1a992ac476a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poin: {fileID: 1517321170}
+  poin: {fileID: 0}
 --- !u!143 &1734295966
 CharacterController:
   m_ObjectHideFlags: 0
