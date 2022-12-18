@@ -26,7 +26,7 @@ public class PickUp : MonoBehaviour
             jarak[i] = Vector3.Distance(transform.position, kotak[i].transform.position);
             if (main == null)
             {
-                if (jarak[i]>0&&jarak[i]<0.5)
+                if (jarak[i] > 0 && jarak[i] < 0.5)
                 {
                     if (Input.GetKeyDown(KeyCode.E))
                     {
@@ -72,4 +72,8 @@ public class PickUp : MonoBehaviour
         }
     }
 
+    void checknearest()
+    {
+
+    }
 }

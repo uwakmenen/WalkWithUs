@@ -1,12 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class SceneManager : MonoBehaviour
 {
-    public GameObject options;
-
     // Start is called before the first frame update
     void Start()
     {
