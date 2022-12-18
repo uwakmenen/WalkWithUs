@@ -2544,7 +2544,7 @@ MonoBehaviour:
   GroundedRadius: 0.1
   GroundLayers:
     serializedVersion: 2
-    m_Bits: 576
+    m_Bits: 0
   CinemachineCameraTarget: {fileID: 1781096545}
   WinUI: {fileID: 0}
   TopClamp: 70
@@ -18991,7 +18991,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 459}
+  m_AnchoredPosition: {x: 0, y: 374}
   m_SizeDelta: {x: 294.4385, y: 112.5599}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &2040110693 stripped
