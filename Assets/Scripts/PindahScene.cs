@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class PindahScene : MonoBehaviour
 {
-    public void MulaiGame()
+
+    public void switchscene(int index)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(index);
     }
 
     public void KeluarGame()

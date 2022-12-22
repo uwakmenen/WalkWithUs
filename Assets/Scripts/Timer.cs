@@ -9,6 +9,8 @@ public class Timer : MonoBehaviour
     public float Waktu = 100;
     public bool GameAktif = true;
 
+    public GameObject Kalah;
+
     void SetText()
     {
         int Menit = Mathf.FloorToInt(Waktu / 60);
@@ -34,7 +36,10 @@ public class Timer : MonoBehaviour
         if(GameAktif && Waktu <= 0)
         {
             Debug.Log("Game Kalah");
+            FindObjectOfType<StarterAssets.ThirdPersonController>().enabled = false;
             GameAktif = false;
+            Kalah.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }

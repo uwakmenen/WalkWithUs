@@ -63,6 +63,9 @@ namespace StarterAssets
         [Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
         public GameObject CinemachineCameraTarget;
 
+        [Tooltip("UI yang muncul untuk win condition")]
+        public GameObject WinUI;
+
         [Tooltip("How far in degrees can you move the camera up")]
         public float TopClamp = 70.0f;
 
@@ -135,7 +138,6 @@ namespace StarterAssets
         private void Start()
         {
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
-            
             _hasAnimator = TryGetComponent(out _animator);
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
@@ -144,12 +146,16 @@ namespace StarterAssets
 #else
 			Debug.LogError( "Starter Assets package is missing dependencies. Please use Tools/Starter Assets/Reinstall Dependencies to fix it");
 #endif
+            WinUI.SetActive(false);
 
             AssignAnimationIDs();
 
             // reset our timeouts on start
             _jumpTimeoutDelta = JumpTimeout;
             _fallTimeoutDelta = FallTimeout;
+
+
+            GameManager.Instance.Win(true);
         }
 
         private void Update()
@@ -387,5 +393,17 @@ namespace StarterAssets
                 AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
             }
         }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            if(collision.gameObject.layer == 7)
+            {
+                WinUI.SetActive(true);
+                GameManager.Instance.Win(false);
+                Cursor.lockState = CursorLockMode.None;
+            }
+        }
+
+      
     }
 }
