@@ -6,9 +6,10 @@ public class PickUp : MonoBehaviour
 {
     public GameObject poin;
     private GameObject[] kotak;
-    private GameObject main;
+    public GameObject main;
     float[] jarak;
     private GameObject[] tongSampah;
+    public Vector3 temp;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,25 +50,14 @@ public class PickUp : MonoBehaviour
                     if (main != null)
                     {
                         main.transform.SetParent(tongSampah[i].transform);
-                        main.transform.localPosition = new Vector3(0,1,0);
+                        main.transform.localPosition = temp;
                         main = null;
-
-                    }
-
-                }
-                //jika tidak dia akan melepas barang saja
-                else
-                {
-                    if (main != null)
-                    {
-                        poin.transform.DetachChildren();
-                        main = null;
+                        print("a");
                     }
 
                 }
 
             }
-
 
         }
     }

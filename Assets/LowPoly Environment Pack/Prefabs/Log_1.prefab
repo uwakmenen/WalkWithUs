@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4063541705819162}
   - component: {fileID: 33142601234234008}
   - component: {fileID: 23289968634786746}
+  - component: {fileID: 1425541625}
   m_Layer: 0
   m_Name: Log_1
   m_TagString: halangan
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1255758057252634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,3 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1425541625
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255758057252634}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15591049, y: 2.07, z: 3}
+  m_Center: {x: -0.034139935, y: 0.97603196, z: 0.036644004}

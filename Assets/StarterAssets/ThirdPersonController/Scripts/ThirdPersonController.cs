@@ -401,6 +401,7 @@ namespace StarterAssets
                 WinUI.SetActive(true);
                 GameManager.Instance.Win(false);
                 Cursor.lockState = CursorLockMode.None;
+                FindObjectOfType<Timer>().GameAktif = false;
             }
         }
 
